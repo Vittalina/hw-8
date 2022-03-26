@@ -24,8 +24,15 @@
 }
 .footer-container {
   text-align: center;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: baseline;
+  }
   @media screen and (min-width: 1200px) {
     display: flex;
+    flex-wrap: nowrap;
     align-items: baseline;
     text-align: start;
   }
@@ -35,6 +42,9 @@
   margin-bottom: 60px;
   display: flex;
   justify-content: center;
+  @media screen and (min-width: 768px) {
+    margin-bottom: 0;
+  }
   @media screen and (min-width: 1200px) {
     justify-content: flex-start;
   }
@@ -72,25 +82,8 @@
 .footer-list__tel:focus {
   color: var(--accent-color);
 }
-.footer-container {
-  // display: flex;
-  // align-items: baseline;
-  @media screen and (min-width: 768px) {
-    display: flex;
-    align-items: baseline;
-    flex-wrap: wrap;
-  }
-  @media screen and (min-width: 1200px) {
-    display: flex;
-    align-items: baseline;
-    flex-wrap: nowrap;
-  }
-}
 .footer-socials {
   // margin-left: 70px;
-  @media screen and (min-width: 768px) {
-    margin-left: 165px;
-  }
   @media screen and (min-width: 1200px) {
     margin-left: 70px;
   }
@@ -132,13 +125,12 @@
 .footer-input__wrap {
   // margin-left: 93px;
   // display: inline-block;
-  width: 100%;
+  max-width: 100%;
   @media screen and (min-width: 768px) {
-    text-align: center;
+    margin-top: 60px;
   }
   @media screen and (min-width: 1200px) {
     margin-left: 93px;
-    display: inline-block;
   }
 }
 .footer__label {
@@ -168,7 +160,7 @@
   padding: 15px 295px 15px 16px;
   outline: none;
   background-color: transparent;
-  margin-bottom: 20px;
+  // margin-bottom: 20px;
   &::placeholder {
     font-weight: normal;
     font-size: 16px;
@@ -196,8 +188,12 @@
   min-width: 200px;
   height: 50px;
   padding: 10px 28px 10px 29px;
+  margin-top: 20px;
   @media screen and (min-width: 768px) {
-    display: block;
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
   }
   @media screen and (min-width: 1200px) {
     display: inline-flex;
