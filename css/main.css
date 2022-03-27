@@ -1135,6 +1135,10 @@ a {
   margin-bottom: 10px;
 }
 
+.form-field-check {
+  margin-bottom: 30px;
+}
+
 .modal__label {
   font-weight: normal;
   font-size: 12px;
