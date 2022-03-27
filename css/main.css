@@ -272,13 +272,6 @@ a {
   }
 }
 
-@media screen and (min-width: 1200px) {
-  .menu-open-btn,
-  .menu-close-btn {
-    display: none;
-  }
-}
-
 .menu-open-btn:hover,
 .menu-open-btn:focus {
   fill: var(--accent-color);
